@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/projet-daw.iml" filepath="$PROJECT_DIR$/.idea/projet-daw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DAWTrab.iml" filepath="$PROJECT_DIR$/.idea/DAWTrab.iml" />
     </modules>
   </component>
 </project>
