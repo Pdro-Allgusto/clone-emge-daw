@@ -69,6 +69,7 @@ p{
     border-radius: 20px;
 }
 
+
 /* ======= Media Queries ======= */
 
 @media (max-width: 990px) {
@@ -77,7 +78,7 @@ p{
     }
 
     #caixa-colorida{
-        margin: 0vw -4vw;
+        margin: 0vw -4vw 20px -4vw;
         padding: 10px 4vw;
     }
 
@@ -100,7 +101,7 @@ p{
         margin: 0vw 15vw;
     }
     #caixa-colorida{
-        margin: 0vw -15vw;
+        margin: 0vw -15vw 20px -15vw;
         padding: 10px 15vw;
     }
 }
