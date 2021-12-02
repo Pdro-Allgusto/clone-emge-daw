@@ -29,6 +29,8 @@ img {
 
 /* ======= Centralização ======== */
 
+
+
 main{
     padding-top: 30px;
 }
@@ -63,6 +65,10 @@ p{
     height: auto;
 }
 
+#imgCentral > img {
+    border-radius: 20px;
+}
+
 /* ======= Media Queries ======= */
 
 @media (max-width: 990px) {
@@ -70,9 +76,9 @@ p{
         margin: 0vw 4vw;
     }
 
-        #imgCentral{
-        width: 10vh;
-        height: 100vw;
+    #caixa-colorida{
+        margin: 0vw -4vw;
+        padding: 10px 4vw;
     }
 
     #fotoDireita{
@@ -93,6 +99,16 @@ p{
     main{
         margin: 0vw 15vw;
     }
+    #caixa-colorida{
+        margin: 0vw -15vw;
+        padding: 10px 15vw;
+    }
+}
+
+#imgEmge{
+    margin-right: 50px;
+    width: 25%;
+    height: 25%;
 }
 
 /* ======= BANNER ======== */
@@ -103,7 +119,7 @@ p{
     background-image: url("https://www.unifsa.com.br/wp-content/uploads/2012/06/engenharia-civil-930x445.jpg")
 }
 .bannerAE{
-    background-image: url("https://i.imgur.com/uSZT2uB.jpg")
+    background-image: url("https://images.pexels.com/photos/3172740/pexels-photo-3172740.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
 }
 .banner {
     height: 40vh;
@@ -117,6 +133,7 @@ p{
     align-items: flex-start;
     /*https://www.w3schools.com/css/tryit.asp?filename=trycss_position_relative*/
     position: relative;
+
 }
 .color-overlay {
     width: 100%;
@@ -131,7 +148,6 @@ p{
     margin-top: 17vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    z-index: 1;
 }
 
 .banner h1 {

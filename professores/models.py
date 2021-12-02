@@ -44,6 +44,7 @@ class Professor(Base):
     slug = models.SlugField('Slug', max_length=250, unique=True, blank=True, editable=False)
     materia = models.ForeignKey('professores.Materia', verbose_name='Materia', on_delete=models.CASCADE)
 
+
     class Meta:
         ordering = ('nome',)
         verbose_name = 'professor'

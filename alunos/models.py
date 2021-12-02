@@ -43,6 +43,7 @@ class Aluno(Base):
     email = models.CharField('Email', max_length=200)
     imagem = StdImageField('Imagem', upload_to='alunos', variations={'thumb': (300, 300)})
     slug = models.SlugField('Slug', max_length=250, unique=True, blank=True, editable=False)
+    comentario = models.TextField(blank=True)
     materia = models.ForeignKey('alunos.Materia', verbose_name='Materia', on_delete=models.CASCADE)
     nota = models.IntegerField('Nota')
 

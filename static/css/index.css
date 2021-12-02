@@ -1,0 +1,256 @@
+
+/* ======== MAIN =========*/
+
+h1, h2 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+p {
+    text-align: justify;
+}
+
+article{
+    margin-top: 20px;
+}
+
+header{
+    position: sticky;
+    z-index: 2;
+}
+
+/* ======== VESTIBULAR =========*/
+
+#vestibular{
+    padding:20px 7vw;
+    color: white;
+    margin: 0vw -7vw;
+    background-color: rgb(204, 53, 71);
+}
+
+#vestibular-subtitulo{
+    margin-bottom: 20px;
+}
+#vestibular-subtitulo p {
+    text-align: center;
+    margin: 0px;
+}
+
+#vestibular h2{
+    margin: 5px;
+    color: black;
+    font-size: 35px;
+}
+#vestibular h3{
+    color: black;
+    padding: 8px;
+    width: fit-content;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+#vestibular-grid{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+}
+
+#vestibular-img{
+    margin: auto;
+}
+
+#vestibular img{
+    border-radius: 10px;
+}
+
+#vestibular-info {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#vestibular-info-info{
+    margin: auto;
+    padding-left: 40px;
+}
+
+ h2{
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+ #sobre-left{
+     text-align: center;
+     margin: auto;
+ }
+#sobre-right{
+    text-align: center;
+}
+#imgMainEmge, #contato-telefone {
+    text-align: center;
+    margin: auto;
+}
+
+
+#vestibular-info a{
+    color: white;
+}
+
+#vestibular-conteudo{
+    background-color: #ba0808;
+    padding: 9px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+#vestibular-conteudo p {
+    margin: 0px;
+}
+
+#vestibular-texto{
+    margin: auto;
+}
+/* ======== CONTATO =========*/
+
+#contato-grid{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+}
+
+#contato-grid-1, #contato-grid-2{
+    margin: auto;
+}
+
+#contato-main {
+    padding-bottom: 30px;
+}
+
+#contato-main > *{
+    text-align: center;
+    margin: auto;
+}
+
+#contatos-setores, #contatos-setores > p{
+    text-align: center;
+}
+
+
+/* ======== BACK TO TOP =========*/
+
+
+.back-to-top {
+    background: red;
+    color: white;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.5em;
+    font-size: 1.5rem;
+    clip-path: circle();
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+
+    transform: translateY(100%);
+}
+
+.back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    z-index: 99;
+}
+
+input {
+    font-family: headerFont;
+}
+
+/* ======== MEDIA QUERY =========*/
+
+@media (max-width: 990px) {
+    main{
+        margin: 0vw 3vw;
+    }
+    #vestibular-grid{
+        grid-template-columns: 1fr;
+    }
+    #contato-grid{
+        grid-template-columns: 1fr;
+    }
+    #mapa{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media(min-width: 991px){
+
+    main{
+        margin: 0vw 7vw;
+    }
+}
+
+/* ======== BANNER =========*/
+
+.banner {
+    height: 40vh;
+    /* aqui alinha nos eixos horizontal e vertical */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /*https://www.w3schools.com/css/tryit.asp?filename=trycss_position_relative*/
+    position: relative;
+}
+
+.color-overlay {
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+    opacity: 0.1;
+    /*https://www.w3schools.com/css/tryit.asp?filename=trycss_position_absolute*/
+    position: absolute;
+}
+
+.banner-elementos {
+    margin-top: 17vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    z-index: 1;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.bannerMain{
+    /*background-image: url("https://d3q93wnyp4lkf8.cloudfront.net/revista/attachment/post_body_images/photos/original/8328/planejamento-faculdade.jpg?1489697287");
+    */
+    background-image: url("https://emge.edu.br/wp-content/uploads/2019/02/bg-csi.jpg");
+    width: auto;
+    height: auto;
+}
+
+/* ======== FOOTER =========*/
+
+#imgEmge{
+    margin-right: 50px;
+    width: 25%;
+    height: 25%;
+}
+
+#listaAR{
+    list-style: square;
+    padding: 0px 85px;
+}
+

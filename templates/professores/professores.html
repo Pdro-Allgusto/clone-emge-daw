@@ -1,12 +1,45 @@
 {% extends "base.html" %}
 {% block conteudo %}
 
-<h2>Materias</h2>
-<a href="/professores">Todas as materias</a>
-{% for materia in lista_materias %}
-<a href="{{ materia.get_absolute_url }}">{{ materia.nome }}</a>
-{% endfor %}
+<style>
+    #materias a {
+        text-decoration: none;
+        color: white;
+    }
 
+    #materias {
+
+        width: fit-content;
+        margin: auto;
+        text-align: center;
+        background-color: #ba0808;
+        color: white;
+        padding: 10px;
+        margin: 7px;
+        border-radius: 7px;
+    }
+
+    #center {
+        text-align: center;
+        margin: auto;
+    }
+
+    #materias:hover{
+        background-color: #003383FF;
+    }
+</style>
+<h2>Materias</h2>
+<div id="center">
+    <span id="materias">
+<a href="/professores">Todas as materias</a>
+</span>
+    {% for materia in lista_materias %}
+
+    <span id="materias">
+    <a href="{{ materia.get_absolute_url }}">{{ materia.nome }}</a>
+</span>
+    {% endfor %}
+</div>
 <h2>Professores</h2>
 <div class="produtos__container">
     {% for professor in lista_professores %}

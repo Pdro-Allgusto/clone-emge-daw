@@ -1,30 +1,41 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <!-- tags obrigatórias -->
     <meta charset="UTF-8">
     <title>Trabalho Final</title>
 
+
     {% include 'cssImport.html' %}
 
     <!-- CSS Específico deste projeto -->
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'css/django.css' %}">
-    {% include 'barra_navegacao.html' %}
-
+    <link rel="stylesheet" href="{% static 'css/index.css'  %}"/>
 </head>
 <body>
-<div class="container-fluid">
-    {% block conteudo %}
-    {% endblock conteudo %}
+{% include 'barra_navegacao.html' %}
+<section class="banner bannerMain" style="">
+    <div class="color-overlay"></div>
+    <div class="banner-elementos">
+        <h1>EMGE - ESCOLA DE ENGENHARIA DE MINAS GERAIS</h1>
+    </div>
+</section>
+<div class="container-fluid" style="padding: 0px; margin: 0px">
+    <main>
+        {% block conteudo %}
+        {% endblock conteudo %}
+    </main>
+
+
 </div>
-
-
-
+<footer style="margin-top: 100px">
+    {% include 'footer.html' %}
+</footer>
 {% include 'scriptImport.html' %}
+
 <!-- Script Específico deste projeto -->
 <script src="{% static 'js/script.js' %}"></script>
-
 </body>
 </html>
