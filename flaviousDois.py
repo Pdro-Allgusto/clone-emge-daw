@@ -6,19 +6,24 @@ while True:
             entrada = input("").split()
             numero_homens = int(entrada[0])
             salto = int(entrada[1])
-            array = [1 for i in range(1, numero_homens + 1)]
+            array = ""
+            for c in range(0, numero_homens):
+                array += "1"
 
             morte = salto
 
             for k in range(1, numero_homens):
-                if array[morte] == 0:
+                fimString = (morte + 1) % numero_homens
+                if array[morte:fimString] == "0":
                     pulo = 0
                     while pulo != salto:
                         morte = (morte + 1) % numero_homens
-                        if array[morte]:
+                        if array[morte:fimString] == "1":
                             pulo += 1
-                if array[morte] == 1:
-                    array[morte] = 0
+                if array[morte:fimString] == "1":
+                    array[morte:fimString] = "0"
+
+            print(array)
 
             numero_vivo = numero_homens
 
