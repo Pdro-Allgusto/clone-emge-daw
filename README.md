@@ -12,6 +12,7 @@ O trabalho era colocar em prática todo a matéria que foi passada no 2º semest
  - HTML
  - CSS
  - Python com framework Django
+ - Framework Bootstrap 
 
 
 
